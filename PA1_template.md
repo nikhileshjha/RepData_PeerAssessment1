@@ -160,6 +160,6 @@ library(lattice)
 xyplot(steps_by_interval_i$steps ~ steps_by_interval_i$interval|steps_by_interval_i$dow, main="Average Steps per Day by Interval",xlab="Interval", ylab="Steps",layout=c(1,2), type="l")
 ```
 
-![](activity pattern-1.png)<!-- -->
+![](activity-pattern-1.png)<!-- -->
 
 It looks like people move around a lot more on Weekends.
