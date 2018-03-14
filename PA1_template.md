@@ -42,7 +42,7 @@ tot <- aggregate(dat$steps,list(dat$date),sum)
 qplot(tot$x,xlab="Total Number of Steps",ylab = "Frequency",binwidth=500)
 ```
 
-![](PA1_template_files/figure-html/unnamed-chunk-2-1.png)<!-- -->
+![](unnamed-chunk-2-1.png)<!-- -->
 
 Mean and median number of steps taken each day
 Note: Includes both interpretation of the question - Mean and Median per day as well as Mean and Median of all steps.
@@ -87,7 +87,7 @@ plot1 <- ggplot(data = five_min_steps, aes(x = interval, y = steps)) +
 print(plot1)
 ```
 
-![](PA1_template_files/figure-html/unnamed-chunk-5-1.png)<!-- -->
+![](unnamed-chunk-5-1.png)<!-- -->
 
 The 5-minute interval that, on average, contains the maximum number of steps
 
@@ -123,7 +123,7 @@ steps_by_day <- aggregate(steps ~ date, imputed_data, sum)
 hist(steps_by_day$steps, main = paste("Total Steps Each Day"), col="blue", xlab="Number of Steps")
 ```
 
-![](PA1_template_files/figure-html/histogram-1.png)<!-- -->
+![](histogram-1.png)<!-- -->
 
 Printing the mean and the median
 
@@ -160,6 +160,6 @@ library(lattice)
 xyplot(steps_by_interval_i$steps ~ steps_by_interval_i$interval|steps_by_interval_i$dow, main="Average Steps per Day by Interval",xlab="Interval", ylab="Steps",layout=c(1,2), type="l")
 ```
 
-![](PA1_template_files/figure-html/activity pattern-1.png)<!-- -->
+![](activity pattern-1.png)<!-- -->
 
 It looks like people move around a lot more on Weekends.
